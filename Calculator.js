@@ -5,32 +5,42 @@ const buttonDivide = document.getElementById('buttonDivide');
 
 function valueInput1() {
     let number1 = document.getElementById('num1').value;
-    return Number(number1);
+    return Number(number1)
 }
 
 function valueInput2() {
     let number2 = document.getElementById('num2').value;
-    return Number(number2);
+    return Number(number2)
+}
+
+function action(value) {
+    let result;
+    if (value === '+') {
+        result = valueInput1() + valueInput2()
+    } else if (value === '-') {
+        result = valueInput1() - valueInput2()
+    } else if (value === '*') {
+        result = valueInput1() * valueInput2()
+    } else if (value === '/') {
+        result = valueInput1() / valueInput2()
+    }
+    window.console.log(result)
 }
 
 function onButtonClickPlus() {
-    let sum = valueInput1() + valueInput2();
-    console.log(sum);
+    action('+')
 }
 
 function onButtonClickMinus() {
-    let difference = valueInput1() - valueInput2();
-    console.log(difference);
+    action('-')
 }
 
 function onButtonClickMultiply() {
-    let result = valueInput1() * valueInput2();
-    console.log(result);
+    action('*')
 }
 
 function onButtonClickDivide() {
-    let fraction = valueInput1() / valueInput2();
-    console.log(fraction);
+    action('/')
 }
 
 buttonPlus.addEventListener('click', onButtonClickPlus);
