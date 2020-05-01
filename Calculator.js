@@ -14,39 +14,24 @@ function valueInput2() {
 }
 
 function onButtonClickPlus() {
-    let num1 = valueInput1();
-    let num2 = valueInput2();
-
-    let sum = num1 + num2;
+    let sum = valueInput1() + valueInput2();
     console.log(sum);
 }
 
 function onButtonClickMinus() {
-    let num1 = valueInput1();
-    let num2 = valueInput2();
-
-    let difference = num1 - num2;
+    let difference = valueInput1() - valueInput2();
     console.log(difference);
 }
 
 function onButtonClickMultiply() {
-    let num1 = valueInput1();
-    let num2 = valueInput2();
-
-    let result = num1 * num2;
+    let result = valueInput1() * valueInput2();
     console.log(result);
 }
 
 function onButtonClickDivide() {
-    let num1 = valueInput1();
-    let num2 = valueInput2();
-
-    let fraction = num1 / num2;
+    let fraction = valueInput1() / valueInput2();
     console.log(fraction);
 }
-
-
-
 
 buttonPlus.addEventListener('click', onButtonClickPlus);
 buttonMinus.addEventListener('click', onButtonClickMinus);
