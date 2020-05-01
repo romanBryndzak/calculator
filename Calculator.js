@@ -14,22 +14,34 @@ function valueInput2() {
 }
 
 function onButtonClickPlus() {
-    let sum = valueInput1() + valueInput2();
+    let num1 = valueInput1();
+    let num2 = valueInput2();
+
+    let sum = num1 + num2;
     console.log(sum);
 }
 
 function onButtonClickMinus() {
-    let difference = valueInput1() - valueInput2();
+    let num1 = valueInput1();
+    let num2 = valueInput2();
+
+    let difference = num1 - num2;
     console.log(difference);
 }
 
 function onButtonClickMultiply() {
-    let result = valueInput1() * valueInput2();
+    let num1 = valueInput1();
+    let num2 = valueInput2();
+
+    let result = num1 * num2;
     console.log(result);
 }
 
 function onButtonClickDivide() {
-    let fraction = valueInput1() / valueInput2();
+    let num1 = valueInput1();
+    let num2 = valueInput2();
+
+    let fraction = num1 / num2;
     console.log(fraction);
 }
 
@@ -37,4 +49,3 @@ buttonPlus.addEventListener('click', onButtonClickPlus);
 buttonMinus.addEventListener('click', onButtonClickMinus);
 buttonMultiply.addEventListener('click', onButtonClickMultiply);
 buttonDivide.addEventListener('click', onButtonClickDivide);
-
